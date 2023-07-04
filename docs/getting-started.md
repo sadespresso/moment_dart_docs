@@ -1,10 +1,42 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
+slug: /
 ---
 
 # Getting Started ✨
 
-> Moment is a **immutable** subclass for DateTime.
+**moment_dart** is a [moment.js](https://momentjs.com/) inspired [`DateTime`](https://api.dart.dev/dart-core/DateTime-class.html) query, manipulation, and humanization library for Dart. This library provides single class that extends `DateTime`.
+
+:::tip
+`Moment` is **immutable**, like its superclass.
+
+```dart
+final now = Moment.now();
+
+assert(now is DateTime); // true
+assert(now is Moment); // true
+```
+
+:::
+
+## Installation
+
+In your project directory, run:
+
+```sh
+dart pub get moment_dart
+```
+
+or, add it as a dependency in `pubspec.yaml`
+
+```yaml pubspec.yaml
+...
+dependencies:
+    moment_dart: 0.17.4
+...
+```
+
+## Usage
 
 1. Import the package
 
@@ -19,12 +51,3 @@ sidebar_position: 2
     ```dart
     Moment moment = DateTime.now().toMoment();
     ```
-
-Please note that `Moment` is subclass of `DateTime`. Like its superclass, it's **immutable**.
-
-```dart
-final now = Moment.now();
-
-assert(now is DateTime); // true
-assert(now is Moment); // true
-```

@@ -44,6 +44,12 @@ const config = {
           editUrl:
             'https://github.com/sadespresso/moment_dart_docs/tree/main/',
           routeBasePath: "/",
+          lastVersion: "current",
+          versions: {
+            "current": {
+              label: "0.17.4",
+            }
+          }
         },
         // blog: {
         //   showReadingTime: true,

@@ -14,7 +14,9 @@ After setting the global localization, every new instance, and any existing inst
 
 :::warning
 This instance wouldn't be affected by the global localization because it has localization set on instance-level.
+
 ```dart
 Moment.now(localization: MomentLocalizations.ko());
 ```
+
 :::
