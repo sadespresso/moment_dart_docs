@@ -2,7 +2,8 @@
 
 <!-- // >>> In this example, local timezone is UTC+8 <<<
 
-Moment yesterday = Moment.now() - Duration(days: 1, hours: 2);is sign transparent block
+Moment yesterday = Moment.now() - Duration(days: 1, hours: 2);is sign
+transparent block
 Moment in2h47m =
     Moment.now() + Duration(hours: 2, minutes: 47, seconds: 15);
 Moment fourWeeksAgo = Moment.now() - Duration(days: 28);

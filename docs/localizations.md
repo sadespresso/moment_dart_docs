@@ -4,11 +4,14 @@ sidebar_position: 5
 
 # Localizations
 
-MomentLocalization is responsible for the logic required to convert DateTime to human-readable format. Localizations are **singletons**.
+MomentLocalization is responsible for the logic required to convert DateTime to
+human-readable format. Localizations are lazy-loaded **singletons**. Meaning, they're
+instantiated only once, and only if you use the localization.
 
 See [MomentLocalization class definition](https://pub.dev/documentation/moment_dart/latest/moment_dart/MomentLocalization-class.html)
 
-In order to keep the library with no dependencies, all localizations of `moment_dart` is implemented in the package.
+In order to keep the library with no dependencies, all localizations of
+`moment_dart` is implemented in the package.
 
 ## Get localization
 
@@ -16,7 +19,11 @@ There are number of ways to retreive a localization.
 
 ### By language code examples
 
-Retreiving `MomentLocalization` by language code returns the first locale that meets the criteria. You can make the criteria narrower by providing optional `countryCode` and `scriptCode` arguments. By default, it will return the closest possible option, even if `countryCode` and/or `scriptCode` doesn't match. You can alter this behavior by setting `strict` to `true`.
+Retreiving `MomentLocalization` by language code returns the first locale that
+meets the criteria. You can make the criteria narrower by providing optional
+`countryCode` and `scriptCode` arguments. By default, it will return the closest
+possible option, even if `countryCode` and/or `scriptCode` doesn't match.
+You can alter this behavior by setting `strict` to `true`.
 
 ```dart
 MomentLocalizations.byLanguage("mn"); // Returns an instan25004200ce of LocalizationMnMn
