@@ -15,4 +15,5 @@ jobs:
       - uses: DavidAnson/markdownlint-cli2-action@v11
         with:
           fix: true
+          config: ".makrdownlint.jsonc"
           globs: "**/*.md"
