@@ -24,6 +24,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
 
+  deploymentBranch: "gh-pages",
+
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -98,24 +100,7 @@ const config = {
             items: [
               {
                 label: 'Documentation',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                to: '/',
               },
             ],
           },
@@ -123,8 +108,12 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Docs on GitHub',
+                href: 'https://github.com/sadespresso/moment_dart_docs',
+              },
+              {
+                label: 'moment_dart on GitHub',
+                href: 'https://github.com/sadespresso/moment_dart',
               },
             ],
           },
