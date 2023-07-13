@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+id: getting-started
 slug: /
 ---
 
@@ -7,11 +8,10 @@ slug: /
 
 **moment_dart** is a [moment.js](https://momentjs.com/) inspired
 [`DateTime`](https://api.dart.dev/dart-core/DateTime-class.html) query,
-manipulation, and humanization library for Dart. This library provides single
-class that extends `DateTime`.
+manipulation, and humanization library for Dart.
 
 :::tip
-`Moment` is **immutable**, like its superclass.
+`Moment` extends `DateTime`, and is **immutable**.
 
 ```dart
 final now = Moment.now();
@@ -30,9 +30,9 @@ In your project directory, run:
 dart pub get moment_dart
 ```
 
-or, add it as a dependency in `pubspec.yaml`
+or, manually add in `pubspec.yaml`
 
-```yaml pubspec.yaml
+```yaml title="pubspec.yaml"
 ...
 dependencies:
     moment_dart: 0.17.4
@@ -47,8 +47,8 @@ dependencies:
     import 'package:moment_dart/moment_dart.dart';
     ```
 
-    You may want to set [**global localization**](./global-localization.md) at
-    the startup of your application.
+    You may want to set [**global localization**](global-localization.md) at
+    the initialization of your application.
 
 2. Create a moment instance. See [list of constructors](https://pub.dev/documentation/moment_dart/latest/moment_dart/Moment-class.html#constructors)
 

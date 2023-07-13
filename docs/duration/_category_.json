@@ -1,4 +1,8 @@
 {
-  "label": "Durations",
-  "position": 3
+  "label": "Duration",
+  "position": 2,
+  "link": {
+    "type": "doc",
+    "id": "duration:relative"
+  }
 }
