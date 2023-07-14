@@ -1,3 +1,7 @@
 {
-  "label": "Extensions"
+  "label": "Extensions",
+  "link": {
+    "type": "doc",
+    "id": "extension/index"
+  }
 }

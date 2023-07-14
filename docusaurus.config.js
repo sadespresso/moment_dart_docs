@@ -49,7 +49,7 @@ const config = {
           lastVersion: "current",
           versions: {
             "current": {
-              label: "0.17.4",
+              label: "0.17.5",
             }
           }
         },

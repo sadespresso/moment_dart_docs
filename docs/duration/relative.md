@@ -1,6 +1,6 @@
 ---
 slug: /duration
-id: duration:relative
+id: relative
 ---
 
 # Relative Duration
