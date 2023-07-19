@@ -26,6 +26,9 @@ DateTime.utc(1970) == DateTime.fromMillisecondsSinceEpoch(0, isUtc: true); // tr
 
 ### Getters
 
+* date
+
+  Returns new object with hours, minutes, ..., microseconds omitted
 * isLeapYear
 * hour12
 * isAm
@@ -33,10 +36,10 @@ DateTime.utc(1970) == DateTime.fromMillisecondsSinceEpoch(0, isUtc: true); // tr
 * quarter
 * week
 
-    [ISO Week](https://en.wikipedia.org/wiki/ISO_week_date) number
+  [ISO Week](https://en.wikipedia.org/wiki/ISO_week_date) number
 * weekYear
 
-    Year according to [ISO Week](https://en.wikipedia.org/wiki/ISO_week_date)
+  Year according to [ISO Week](https://en.wikipedia.org/wiki/ISO_week_date)
 * dayOfYear
 
     Ordinal day of the year

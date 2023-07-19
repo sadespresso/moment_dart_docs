@@ -5,13 +5,6 @@ id: isAtSame
 
 # Is at same year/month/.../second
 
-:::warning
-
-`.isAtSame*()` extension methods **do not check** timezones. Make sure your
-`DateTime` or `Moment` object is of the desired timezone.
-
-:::
-
 Unit comparison cascades. Meaning, if the following is true
 
 ```dart

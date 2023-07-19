@@ -4,6 +4,8 @@
 
 Auto-format usually chooses most suitable two units.
 
+See [abbreviation options](short-forms.md)
+
 ```dart
 final epoch = Moment.fromMillisecondsSinceEpoch(0);
 final now = DateTime(2023, DateTime.july, 14).toMoment();
@@ -38,7 +40,7 @@ duration1d1h.toDurationString(format: DurationFormat([DurationUnit.day]), dropPr
 duration1d1h.toDurationString(format: DurationFormat([DurationUnit.hour]), dropPrefixOrSuffix: true); // 25 hours
 ```
 
-## Using it on `Duration`
+## Using on `Duration`
 
 ```dart
 Duration(days: 67, hours: 3, minutes: 2).toDurationString(

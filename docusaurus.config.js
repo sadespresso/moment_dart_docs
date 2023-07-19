@@ -49,7 +49,7 @@ const config = {
           lastVersion: "current",
           versions: {
             "current": {
-              label: "0.17.5",
+              label: "0.18.1",
             }
           }
         },
@@ -114,6 +114,10 @@ const config = {
               {
                 label: 'moment_dart on GitHub',
                 href: 'https://github.com/sadespresso/moment_dart',
+              },
+              {
+                label: 'moment_dart on pub.dev',
+                href: 'https://pub.dev/packages/moment_dart',
               },
             ],
           },

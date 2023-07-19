@@ -5,13 +5,6 @@ id: findWeekday
 
 # Find weekdays
 
-:::warning
-
-Weekday extension methods **do not check** timezones. Make sure both
-of your objects are of same [timezone type](extension.md#timezone-types).
-
-:::
-
 ## Usage
 
 ```dart

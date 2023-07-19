@@ -10,7 +10,7 @@ id: calendar
 ```dart
 final Moment now = Moment.now();
 
-print(now.calendar())
+print(now.calendar()); // Today at 03:00 PM
 ```
 
 If the date is further than 7 days, result will be a date time formatted with

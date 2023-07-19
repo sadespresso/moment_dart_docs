@@ -35,7 +35,7 @@ or, manually add in `pubspec.yaml`
 ```yaml title="pubspec.yaml"
 ...
 dependencies:
-    moment_dart: 0.17.5
+    moment_dart: 0.18.1
 ...
 ```
 
@@ -55,3 +55,11 @@ dependencies:
     ```dart
     Moment moment = DateTime.now().toMoment();
     ```
+
+## Common problems you might face
+
+Like `DateTime`, most functionality in moment_dart does not check, enforce,
+or alter the timezone of date times. Altough, Some methods like
+`Moment.format()` do offer options to enforce certain timezone.
+
+You might want to skim through [common mishaps](common-mishaps.md).

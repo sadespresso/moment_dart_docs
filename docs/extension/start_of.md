@@ -5,13 +5,6 @@ id: startOf
 
 # Start of year/month/.../second
 
-:::warning
-
-`.startOf*()` extension methods **do not check** timezones. Make sure your
-`DateTime` or `Moment` object is of the desired timezone.
-
-:::
-
 ## Usage
 
 ```dart
@@ -35,7 +28,7 @@ All extension methods can be called on `DateTime` and `Moment` objects.
     Special cases:
 
   * Returns clone of the object when passed `DurationUnit.microseconds`
-  * Throws [`MomentException`](https://pub.dev/documentation/moment_dart/0.17.5/moment_dart/MomentException-class.html)
+  * Throws [`MomentException`](https://pub.dev/documentation/moment_dart/0.18.1/moment_dart/MomentException-class.html)
     when passed `DurationUnit.week` as it doesn't have any way to determine the
     start of the week.
 
