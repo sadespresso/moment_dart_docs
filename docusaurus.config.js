@@ -86,7 +86,12 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://github.com/sadespresso/moment_dart_docs',
+            href: 'https://pub.dev/packages/moment_dart',
+            label: 'pub.dev',
+            position: 'right',
+          },
+          {
+            href: 'https://github.com/sadespresso/moment_dart',
             label: 'GitHub',
             position: 'right',
           },
