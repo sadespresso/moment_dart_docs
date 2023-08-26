@@ -35,8 +35,8 @@ sunday.lastSunday(); // June 12 2022 09:09 PM
 
 ## Generic method
 
-* nextWeekday(int n)
-* lastWeekday(int n)
+* `nextWeekday(int n)`
+* `lastWeekday(int n)`
 
 Example:
 
