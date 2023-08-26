@@ -46,11 +46,12 @@ const config = {
           editUrl:
             'https://github.com/sadespresso/moment_dart_docs/tree/main/',
           routeBasePath: "/",
-          lastVersion: "current",
+          lastVersion: "0.18.1",
           versions: {
             "current": {
-              label: "0.18.1",
-            }
+              label: "1.0.0-rc.1",
+              path: "next"
+            },
           }
         },
         // blog: {
@@ -86,15 +87,22 @@ const config = {
             label: 'Docs',
           },
           {
-            href: 'https://pub.dev/packages/moment_dart',
-            label: 'pub.dev',
+            type: 'docsVersionDropdown',
             position: 'right',
           },
           {
-            href: 'https://github.com/sadespresso/moment_dart',
-            label: 'GitHub',
+            href: 'https://pub.dev/packages/moment_dart',
             position: 'right',
+            className: 'header-pubdev-link',
+            'aria-label': 'pub.dev package',
+
           },
+          {
+            href: 'https://github.com/sadespresso/moment_dart',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
+          }
         ],
       },
       footer: {
