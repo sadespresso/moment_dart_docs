@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const baseUrl = '/moment_dart_docs/'
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'moment_dart docs',
@@ -14,7 +16,12 @@ const config = {
   url: 'https://dev.gege.mn/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/moment_dart_docs/',
+  baseUrl: baseUrl,
+  scripts: [
+    {
+      src: `${baseUrl}demo/flutter.js`
+    }
+  ],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -46,11 +53,10 @@ const config = {
           editUrl:
             'https://github.com/sadespresso/moment_dart_docs/tree/main/',
           routeBasePath: "/",
-          lastVersion: "0.18.1",
+          lastVersion: "current",
           versions: {
             "current": {
-              label: "1.0.0-rc.1",
-              path: "next"
+              label: "1.0.0",
             },
           }
         },
@@ -72,12 +78,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'moment_dart',
         logo: {
           alt: 'Dart language logo',
-          src: 'img/logo.svg',
+          src: 'img/dart.svg',
         },
         items: [
           {
@@ -85,6 +90,12 @@ const config = {
             sidebarId: 'docs',
             position: 'left',
             label: 'Docs',
+          },
+          {
+            to: '/demo',
+            position: 'left',
+            label: 'Demo',
+            'aria-label': 'Flutter Web Demo',
           },
           {
             type: 'docsVersionDropdown',
@@ -95,7 +106,6 @@ const config = {
             position: 'right',
             className: 'header-pubdev-link',
             'aria-label': 'pub.dev package',
-
           },
           {
             href: 'https://github.com/sadespresso/moment_dart',
@@ -117,6 +127,7 @@ const config = {
               },
             ],
           },
+
           {
             title: 'More',
             items: [
