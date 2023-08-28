@@ -8,6 +8,7 @@
     "prebuild": "cd demo && flutter build web --base-href /moment_dart_docs/demo/ --web-renderer canvaskit -o ../static/demo && rm ../static/demo/index.html",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
+    "predeploy": "cd demo && flutter build web --base-href /moment_dart_docs/demo/ --web-renderer canvaskit -o ../static/demo && rm ../static/demo/index.html",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",

@@ -23,6 +23,8 @@ const config = {
     }
   ],
 
+  trailingSlash: true,
+
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sadespresso', // Usually your GitHub org/user name.
