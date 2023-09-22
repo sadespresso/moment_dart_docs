@@ -27,7 +27,10 @@ assert(now is Moment); // true
 In your project directory, run:
 
 ```sh
-dart pub get moment_dart
+dart pub add moment_dart
+
+# For flutter
+flutter pub add moment_dart
 ```
 
 or, manually add in `pubspec.yaml`
@@ -35,7 +38,7 @@ or, manually add in `pubspec.yaml`
 ```yaml title="pubspec.yaml"
 ...
 dependencies:
-    moment_dart: 1.0.0-rc.1
+    moment_dart: 1.0.1
 ...
 ```
 
