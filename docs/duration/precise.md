@@ -22,7 +22,7 @@ print(nextYear.fromPrecise(
   now,
   format: DurationFormat.all,
   omitZeros: false, // default true
-  form: UnitStringForm.mid,
+  form: Abbreviation.mid,
   delimiter: ", ", // default " "
 ));
 // in 1 yr, 0 mo, 0 day, 0 hr, 0 min, 0 sec
@@ -45,7 +45,7 @@ duration1d1h.toDurationString(format: DurationFormat([DurationUnit.hour]), dropP
 ```dart
 Duration(days: 67, hours: 3, minutes: 2).toDurationString(
   MomentLocalizations.de(),
-  form: UnitStringForm.mid,
+  form: Abbreviation.semi,
 ); // in 2 Mo. 7 Tg.
 ```
 

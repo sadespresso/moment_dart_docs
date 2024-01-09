@@ -4,17 +4,17 @@ id: short-forms
 
 # Short forms
 
-You can use `UnitStringForm` for both relative and precise durations.
+You can use `Abbreviation` for both relative and precise durations.
 
 ```dart
 final yesterday = Moment.now() - const Duration(days: 1);
-yesterday.fromNow(form: UnitStringForm.short); // 1d ago
+yesterday.fromNow(form: Abbreviation.full); // 1d ago
 
 final add37min = Moment.now() + const Duration(minutes: 37);
-add37min.fromNow(form: UnitStringForm.mid); // 37 min ago
+add37min.fromNow(form: Abbreviation.semi); // 37 min ago
 
 final add46min = Moment.now() + const Duration(minutes: 46);
-add46min.fromNow(form: UnitStringForm.short); // in 1h
+add46min.fromNow(form: Abbreviation.full); // in 1h
 ```
 
 :::note
