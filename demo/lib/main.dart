@@ -12,7 +12,7 @@ void main() async {
 }
 
 class DemoApp extends StatefulWidget {
-  const DemoApp({Key? key}) : super(key: key);
+  const DemoApp({super.key});
 
   @override
   State<DemoApp> createState() => _DemoAppState();

@@ -11,7 +11,7 @@ class SnippetEntry {
 class Snippet extends StatelessWidget {
   final SnippetEntry entry;
 
-  const Snippet({Key? key, required this.entry}) : super(key: key);
+  const Snippet({super.key, required this.entry});
 
   @override
   Widget build(BuildContext context) {

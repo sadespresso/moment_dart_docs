@@ -8,7 +8,7 @@ import 'package:moment_dart_demo/components/snippet.dart';
 import 'package:moment_dart_demo/logic/syntax_highlight.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
