@@ -1,37 +1,37 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-const baseUrl = '/moment_dart_docs/'
+const baseUrl = "/moment_dart_docs/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'moment_dart docs',
-  tagline: 'Documentation for moment_dart',
-  favicon: 'img/favicon.ico',
+  title: "moment_dart docs",
+  tagline: "Documentation for moment_dart",
+  favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://dev.gege.mn/',
+  url: "https://dev.gege.mn/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: baseUrl,
   scripts: [
     {
-      src: `${baseUrl}demo/flutter.js`
-    }
+      src: `${baseUrl}demo/flutter.js`,
+    },
   ],
 
   trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'sadespresso', // Usually your GitHub org/user name.
-  projectName: 'moment_dart_docs', // Usually your repo name.
+  organizationName: "sadespresso", // Usually your GitHub org/user name.
+  projectName: "moment_dart_docs", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "throw",
 
   deploymentBranch: "gh-pages",
 
@@ -39,28 +39,27 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/sadespresso/moment_dart_docs/tree/main/',
+          editUrl: "https://github.com/sadespresso/moment_dart_docs/tree/main/",
           routeBasePath: "/",
           lastVersion: "current",
           versions: {
-            "current": {
-              label: "1.1.0",
+            current: {
+              label: "1.1.1",
             },
-          }
+          },
         },
         // blog: {
         //   showReadingTime: true,
@@ -70,7 +69,7 @@ const config = {
         //     'https://github.com/sadespresso/moment_dart_docs/tree/main/',
         // },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -81,69 +80,69 @@ const config = {
     ({
       // Replace with your project's social card
       navbar: {
-        title: 'moment_dart',
+        title: "moment_dart",
         logo: {
-          alt: 'Dart language logo',
-          src: 'img/dart.svg',
+          alt: "Dart language logo",
+          src: "img/dart.svg",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'docs',
-            position: 'left',
-            label: 'Docs',
+            type: "docSidebar",
+            sidebarId: "docs",
+            position: "left",
+            label: "Docs",
           },
           {
-            to: '/demo',
-            position: 'left',
-            label: 'Demo',
-            'aria-label': 'Flutter Web Demo',
+            to: "/demo",
+            position: "left",
+            label: "Demo",
+            "aria-label": "Flutter Web Demo",
           },
           {
-            type: 'docsVersionDropdown',
-            position: 'right',
+            type: "docsVersionDropdown",
+            position: "right",
           },
           {
-            href: 'https://pub.dev/packages/moment_dart',
-            position: 'right',
-            className: 'header-pubdev-link',
-            'aria-label': 'pub.dev package',
+            href: "https://pub.dev/packages/moment_dart",
+            position: "right",
+            className: "header-pubdev-link",
+            "aria-label": "pub.dev package",
           },
           {
-            href: 'https://github.com/sadespresso/moment_dart',
-            position: 'right',
-            className: 'header-github-link',
-            'aria-label': 'GitHub repository',
-          }
+            href: "https://github.com/sadespresso/moment_dart",
+            position: "right",
+            className: "header-github-link",
+            "aria-label": "GitHub repository",
+          },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Documentation',
-                to: '/',
+                label: "Documentation",
+                to: "/",
               },
             ],
           },
 
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Docs on GitHub',
-                href: 'https://github.com/sadespresso/moment_dart_docs',
+                label: "Docs on GitHub",
+                href: "https://github.com/sadespresso/moment_dart_docs",
               },
               {
-                label: 'moment_dart on GitHub',
-                href: 'https://github.com/sadespresso/moment_dart',
+                label: "moment_dart on GitHub",
+                href: "https://github.com/sadespresso/moment_dart",
               },
               {
-                label: 'moment_dart on pub.dev',
-                href: 'https://pub.dev/packages/moment_dart',
+                label: "moment_dart on pub.dev",
+                href: "https://pub.dev/packages/moment_dart",
               },
             ],
           },
@@ -153,7 +152,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        additionalLanguages: ["dart", "bash", "yaml"]
+        additionalLanguages: ["dart", "bash", "yaml"],
       },
     }),
 };
