@@ -69,14 +69,13 @@ class _HomePageState extends State<HomePage> {
 
     final List<SnippetEntry?> formats = [
       SnippetEntry(
-        "Moment.setGlobalLocalization(MomentLocalizations.byLocale(\"$activeLocale\")!)",
+        "Moment.setGlobalLocalization(MomentLocalizations.byLocale(\"$activeLocale\")!);",
         now.localization.endonym,
       ),
       SnippetEntry(
         "final now = Moment.now();",
         "$now",
       ),
-      null,
       SnippetEntry(
         r'now.format();',
         now.format(),
@@ -118,11 +117,7 @@ class _HomePageState extends State<HomePage> {
 
     final List<SnippetEntry?> preciseDurations = [
       SnippetEntry(
-        r"ᠰᠠᠷ᠎ᠠ  ᠶᠢᠨ ᠨᠢᠭᠡᠨ ᠤ ᠡᠳᠦᠷ",
-        now.subtract(const Duration(minutes: 2, seconds: 47)).fromNowPrecise(),
-      ),
-      SnippetEntry(
-        r"now.subtract(const Duration(minutes: 2, seconds: 47)).fromNow();",
+        r"now.subtract(const Duration(minutes: 2, seconds: 47)).fromNowPrecise();",
         now.subtract(const Duration(minutes: 2, seconds: 47)).fromNowPrecise(),
       ),
       SnippetEntry(
