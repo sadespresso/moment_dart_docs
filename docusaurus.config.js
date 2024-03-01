@@ -1,8 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+import { themes as prismThemes } from "prism-react-renderer";
 
 const baseUrl = "/moment_dart_docs/";
 
@@ -57,7 +56,7 @@ const config = {
           lastVersion: "current",
           versions: {
             current: {
-              label: "1.1.1",
+              label: "1.2.0",
             },
           },
         },
@@ -150,8 +149,8 @@ const config = {
         copyright: `Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
         additionalLanguages: ["dart", "bash", "yaml"],
       },
     }),

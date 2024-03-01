@@ -60,12 +60,16 @@ DateTime.utc(1970) == DateTime.fromMillisecondsSinceEpoch(0, isUtc: true); // tr
   DateTime().clone(); // A new DateTime instance
   ```
 
-* toMoment({MomentLocalization? localization})
-* format({
+* `toMoment({MomentLocalization? localization})`
+* format
+
+  ```dart
+  String format({
     String payload = MomentLocalization.localizationDefaultDateFormat,
     bool forceLocal = false,
     MomentLocalization? localization,
   })
+  ```
 
   Format `DateTime` objects without need of creating `Moment`. (Not really
   recommended, no point in avoiding Moment)
