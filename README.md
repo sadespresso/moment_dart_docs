@@ -6,3 +6,11 @@
 
 * [Repo on GitHub](https://github.com/sadespresso/moment_dart)
 * [See on pub.dev](https://pub.dev/packages/moment_dart)
+
+## Deploy
+
+Don't forget, sadespresso!
+
+```sh
+USE_SSH=true GIT_USER=sadespresso yarn deploy
+```
