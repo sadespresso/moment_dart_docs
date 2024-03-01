@@ -26,21 +26,23 @@ DateTime.utc(1970) == DateTime.fromMillisecondsSinceEpoch(0, isUtc: true); // tr
 
 ### Getters
 
-* date
+* `date`
 
   Returns new object with hours, minutes, ..., microseconds omitted
-* isLeapYear
-* hour12
-* isAm
-* isPm
-* quarter
-* week
+* `isLeapYear`
+* `isPast`
+* `isFuture`
+* `hour12`
+* `isAm`
+* `isPm`
+* `quarter`
+* `week`
 
   [ISO Week](https://en.wikipedia.org/wiki/ISO_week_date) number
-* weekYear
+* `weekYear`
 
   Year according to [ISO Week](https://en.wikipedia.org/wiki/ISO_week_date)
-* dayOfYear
+* `dayOfYear`
 
     Ordinal day of the year
 
@@ -49,9 +51,11 @@ DateTime.utc(1970) == DateTime.fromMillisecondsSinceEpoch(0, isUtc: true); // tr
 
 ### Methods
 
-* differenceInDays
-* timeZoneFormatted
-* clone()
+* `differenceInDays()`
+* `timeZoneFormatted()`
+* `isPastAnchored(DateTime anchor)`
+* `isFutureAnchored(DateTime anchor)`
+* `clone()`
 
   Returns object of same type as the original.
 
@@ -60,6 +64,7 @@ DateTime.utc(1970) == DateTime.fromMillisecondsSinceEpoch(0, isUtc: true); // tr
   DateTime().clone(); // A new DateTime instance
   ```
 
+* `toMoment({MomentLocalization? localization})`
 * `format(...)`
 
   Format `DateTime` objects without need of creating `Moment`. (Not really
