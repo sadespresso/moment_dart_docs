@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 import 'package:moment_dart_demo/logic/syntax_highlight.dart';
 
 class SnippetEntry {

@@ -42,6 +42,5 @@ All extension methods can be called on `DateTime` and `Moment` objects.
     Returns start of the week based on [weekStart]. If it's null, it uses `Moment.defaultLocalization.weekStart`.
     When called on `Moment` instance, uses the instance's localization week start
 
-* `startOfIsoWeek()`
 * `startOfMonth()`
 * `startOfYear()`

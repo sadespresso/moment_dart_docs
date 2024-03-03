@@ -38,10 +38,11 @@ Extension methods can be called on `DateTime` and `Moment` objects.
 * `endOfHour()`
 * `endOfDay()`
 
-* endOfLocalWeek([int? weekStart])
+* `endOfLocalWeek([int? weekStart])`
 
     Returns End of the week based on [weekStart]. If it's null, it uses `Moment.defaultLocalization.weekStart`.
     When called on `Moment` instance, uses the instance's localization week start
 
+* `endOfIsoWeek()`
 * `endOfMonth()`
 * `endOfYear()`

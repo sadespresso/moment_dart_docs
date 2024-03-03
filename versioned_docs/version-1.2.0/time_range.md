@@ -60,28 +60,13 @@ Future<void> pickRange() async {
 
   Returns whether this range contains the other range (inclusive)
 
-[See full API reference](https://pub.dev/documentation/moment_dart/latest/moment_dart/TimeRange-class.html)
+[See full API reference](https://pub.dev/documentation/moment_dart/1.2.0/moment_dart/TimeRange-class.html)
 
 ## Getters
 
-* `next`
-
-  Returns a new instance of the next interval.
-  
-  Not available for `CustomTimeRange`.
-
-* `last`
-
-  Returns a new instance of the last interval.
-  
-  Not available for `CustomTimeRange`.
-
 * `isUtc`
 
-  Returns whether the range is in UTC timezone.
-
-  Not available for `LocalWeekTimeRange` or `IsoWeekTimeRange`, and will throw
-  `UnsupportedError` when called.
+  Returns whether the range is in UTC timezone
 
 * `duration`
 
@@ -95,30 +80,23 @@ Future<void> pickRange() async {
 
   Ending of the **TimeRange** (last microsecond)
 
-[See full API reference](https://pub.dev/documentation/moment_dart/latest/moment_dart/TimeRange-class.html)
+[See full API reference](https://pub.dev/documentation/moment_dart/1.2.0/moment_dart/TimeRange-class.html)
 
 ## Create an instance
 
+Relative constructors are inclusive. Meaning `TimeRange.today().to` will equal to
+today at `23:59:59.999999`. True for all `TimeRange.` constructors
+
+* `TimeRange.today()`
+* `TimeRange.tomorrow()`
+* `TimeRange.yesterday()`
+* `TimeRange.thisMonth()`
+* `TimeRange.nextMonth()`
+* `TimeRange.prevMonth()`
+* `TimeRange.thisYear()`
+* `TimeRange.nextYear()`
+* `TimeRange.prevYear()`
 * `CustomTimeRange(from, to)`
-  * `LocalWeekTimeRange`
-  * `IsoWeekTimeRange`
 * `YearTimeRange`
 * `MonthTimeRange`
 * `DayTimeRange`
-* `HourTimeRange`
-* Static methods:
-  * `TimeRange.thisHour()`
-  * `TimeRange.nextHour()`
-  * `TimeRange.lastHour()`
-  * `TimeRange.today()`
-  * `TimeRange.tomorrow()`
-  * `TimeRange.yesterday()`
-  * `TimeRange.today()`
-  * `TimeRange.tomorrow()`
-  * `TimeRange.yesterday()`
-  * `TimeRange.thisMonth()`
-  * `TimeRange.nextMonth()`
-  * `TimeRange.lastMonth()`
-  * `TimeRange.thisYear()`
-  * `TimeRange.nextYear()`
-  * `TimeRange.lastYear()`
