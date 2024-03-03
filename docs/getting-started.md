@@ -59,10 +59,10 @@ dependencies:
     Moment moment = DateTime.now().toMoment();
     ```
 
-    Starting with v1.2.0, you can use static methods such as
+    You can also use static methods such as
 
     * `Moment.startOfToday()`
-    * `Moment.endOfNextMonth()`
+    * `Moment.endOfNextIsoWeek()`
 
     See [list of static methods](https://pub.dev/documentation/moment_dart/latest/moment_dart/Moment-class.html#static-methods)
 

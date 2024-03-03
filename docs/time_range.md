@@ -5,27 +5,35 @@ id: time-range
 
 # Time range
 
-> Available since v1.2.0
-
-Time ranges are a simple class holds `from` and `to` DateTime values. It's
-specifically designed to be used for filters when filtering data. For example,
-in Flutter, it'd be useful to pattern match against the different time range
+TimeRange is a simple class that holds `from` and `to` DateTime values. It's
+designed to be helpful for filters when filtering data. For example, in Flutter,
+it'd be useful to pattern match against the different time range
 classes. For example:
 
 ```dart
 Future<void> pickRange() async {
-    final range = await switch(range) {
-        CustomTimeRange custom => pickRange(...),
+    final TimeRange? range = await switch(range) {
         YearTimeRange yearRange => pickYear(...),
         MonthTimeRange monthRange => pickYearMonth(...),
+        LocalWeekTimeRange weekRange => pickWeek(...),
         DayTimeRange dayRange => pickDate(...),
-        _ => changeRangeMode(),
+        HourTimeRange hourRange => pickDateAndHour(...),
+        CustomTimeRange custom => pickRange(...),
+        _ => null,
     }
-
+    
     if(!mounted) return;
 
     setState(() => currentRange = range);
 }
+```
+
+You can easily iterate through time ranges (except `CustomTimeRange`) like so:
+
+```dart
+final thisWeek = TimeRange.thisLocalWeek();
+
+final nextWeek = thisWeek.next;
 ```
 
 > `moment_dart` is still a Dart library, and can be used without Flutter
