@@ -31,9 +31,12 @@ Future<void> pickRange() async {
 You can easily iterate through time ranges (except `CustomTimeRange`) like so:
 
 ```dart
-final thisWeek = TimeRange.thisLocalWeek();
+final LocalWeekTimeRange thisWeek = TimeRange.thisLocalWeek();
 
-final nextWeek = thisWeek.next;
+// If you have generic type variable, check using `is PageableRange`
+
+final TimeRange generic = ...;
+final TimeRange? nextRange = generic is PageableRange ? (generic as PageableRange).next : null;
 ```
 
 > `moment_dart` is still a Dart library, and can be used without Flutter
