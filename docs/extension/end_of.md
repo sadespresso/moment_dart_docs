@@ -5,6 +5,14 @@ id: endOf
 
 # End of year/month/.../second
 
+:::alert
+
+In versions before 2.2.0, `.endOfLocalWeek()` and `.endOf(DurationUnit.week)`
+methods incorrectly return the next week (7 days ahead). Make sure you update
+to version 2.2.0.
+
+:::
+
 ## Usage
 
 ```dart
