@@ -26,7 +26,7 @@ const RESOURCES = {"assets/packages/syntax_highlight/grammars/dart.json": "b533a
 "manifest.json": "1d7f50e50ab67b8413ecf4aa97ce6174",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "version.json": "ffea81602527aa57faad245e91306342",
-"flutter_bootstrap.js": "3409bd0cbd4fdd4bee3f450fa65675c3",
+"flutter_bootstrap.js": "32e1057d9429ccacc053009cb72dfa74",
 "flutter.js": "4b2350e14c6650ba82871f60906437ea",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
