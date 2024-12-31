@@ -5,7 +5,7 @@ id: endOf
 
 # End of year/month/.../second
 
-:::alert
+:::danger
 
 In versions before 2.2.0, `.endOfLocalWeek()` and `.endOf(DurationUnit.week)`
 methods incorrectly return the next week (7 days ahead). Make sure you update

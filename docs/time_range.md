@@ -39,6 +39,29 @@ final TimeRange generic = ...;
 final TimeRange? nextRange = generic is PageableRange ? (generic as PageableRange).next : null;
 ```
 
+## Serializing and parsing
+
+Serialized time ranges **will preserve** its type.
+
+You can serialize time ranges like so:
+
+```dart
+final YearTimeRange thisYear = TimeRange.thisYear();
+
+thisYear.encode(); // YearTimeRange@2024-01-01T00:00:00.000
+thisYear.encodeShort(); // Y#gs14fme4g0
+
+// identical with .encode()
+thisYear.toString(); //YearTimeRange@2024-01-01T00:00:00.000
+```
+
+Parsing works for both short and long formats. e.g.,
+
+```dart
+final fromShort = TimeRange.parse("Y#gs14fme4g0"); // -> YearTimeRange(2024)
+final fromEncoded = TimeRange.parse("YearTimeRange@2024-01-01T00:00:00.000"); // -> YearTimeRange(2024)
+```
+
 > `moment_dart` is still a Dart library, and can be used without Flutter
 
 ## Methods

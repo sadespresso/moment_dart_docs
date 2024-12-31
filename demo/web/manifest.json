@@ -1,6 +1,6 @@
 {
-    "name": "demo",
-    "short_name": "demo",
+    "name": "moment_dart_demo",
+    "short_name": "moment_dart_demo",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
