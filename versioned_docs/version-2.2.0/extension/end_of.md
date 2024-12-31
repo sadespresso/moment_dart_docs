@@ -36,7 +36,7 @@ Extension methods can be called on `DateTime` and `Moment` objects.
     **Special cases**:
 
   * Returns clone of the object when passed `DurationUnit.microseconds`
-  * Throws [`MomentException`](https://pub.dev/documentation/moment_dart/latest/moment_dart/MomentException-class.html)
+  * Throws [`MomentException`](https://pub.dev/documentation/moment_dart/2.2.0/moment_dart/MomentException-class.html)
     when passed `DurationUnit.week` as it doesn't have any way to determine the
     End of the week.
 
