@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmoment_dart_docs=self.webpackChunkmoment_dart_docs||[]).push([[4304],{6004:(e,r,s)=>{s.r(r),s.d(r,{default:()=>o});s(6651);var c=s(6548),t=s(4592),a=s(4864),d=s(5440),n=s(3060),u=s(2488);function o(e){return(0,u.jsx)(t.cr,{className:(0,c.c)(a.W.wrapper.docsPages),children:(0,u.jsx)(n.c,{children:(0,d.k)(e.route.routes)})})}}}]);
