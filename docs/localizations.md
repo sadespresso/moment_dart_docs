@@ -55,11 +55,12 @@ above.
 | en_US      | English                                        | United States       | [LocalizationEnUs](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationEnUs-class.html)         |
 | es_ES      | Spanish                                        | Spain               | [LocalizationEsEs](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationEsEs-class.html)         |
 | fr_FR      | French                                         | France              | [LocalizationFrFr](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationFrFr-class.html)         |
-| pt_PT      | Portuguese                                     | Portuguese Republic | [LocalizationPtPT](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationFrFr-class.html)         |
 | it_IT      | Italian                                        | Italy               | [LocalizationItIt](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationItIt-class.html)         |
-| ko_KR      | Korean                                         | Korea, Republic of  | [LocalizationKoKr](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationKoKr-class.html)         |
 | ja_JP      | Japanese                                       | Japan               | [LocalizationJaJp](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationJaJp-class.html)         |
+| ko_KR      | Korean                                         | Korea, Republic of  | [LocalizationKoKr](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationKoKr-class.html)         |
 | mn_MN      | Mongolian                                      | Mongolia            | [LocalizationMnMn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationMnMn-class.html)         |
 | mn_Mong_MN | Traditional Mongolian with Arabic numbers      | Mongolia            | [LocalizationMnMongMn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationMnMongMn-class.html) |
 | mn_Qaaq_MN | Traditional Mongolian with Traditional Numbers | Mongolia            | [LocalizationMnQaaqMn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationMnQaaqMn-class.html) |
+| pt_PT      | Portuguese                                     | Portuguese Republic | [LocalizationPtPT](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationPtPt-class.html)         |
+| tr_TR      | Turkish                                        | Turkeey             | [LocalizationTrTr](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationTrTr-class.html)         |
 | zh_CN      | Simplified Chinese                             | China               | [LocalizationZhCn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationZhCn-class.html)         |
