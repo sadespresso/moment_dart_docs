@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 id: time-range
 ---
 
@@ -94,7 +94,7 @@ final fromEncoded = TimeRange.parse("YearTimeRange@2024-01-01T00:00:00.000"); //
 
   Returns whether this range contains the other range (inclusive)
 
-[See full API reference](https://pub.dev/documentation/moment_dart/latest/moment_dart/TimeRange-class.html)
+[See full API reference](https://pub.dev/documentation/moment_dart/3.3.2/moment_dart/TimeRange-class.html)
 
 ## Getters
 
@@ -129,7 +129,7 @@ final fromEncoded = TimeRange.parse("YearTimeRange@2024-01-01T00:00:00.000"); //
 
   Ending of the **TimeRange** (last microsecond)
 
-[See full API reference](https://pub.dev/documentation/moment_dart/latest/moment_dart/TimeRange-class.html)
+[See full API reference](https://pub.dev/documentation/moment_dart/3.3.2/moment_dart/TimeRange-class.html)
 
 ## Create an instance
 
@@ -141,7 +141,6 @@ final fromEncoded = TimeRange.parse("YearTimeRange@2024-01-01T00:00:00.000"); //
 * `DayTimeRange`
 * `HourTimeRange`
 * Static methods:
-  * `TimeRange.allTime()`
   * `TimeRange.thisHour()`
   * `TimeRange.nextHour()`
   * `TimeRange.lastHour()`
