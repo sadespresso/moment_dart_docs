@@ -38,7 +38,7 @@ or, manually add in `pubspec.yaml`
 ```yaml title="pubspec.yaml"
 ...
 dependencies:
-    moment_dart: 4.0.0
+    moment_dart: 4.0.1
 ...
 ```
 
