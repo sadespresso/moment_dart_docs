@@ -5,11 +5,26 @@ id: upgrading
 
 # Upgrading
 
-## From 4.0.0 -> 5.0.0
+## From 4.0.0 -> 5.0.1
 
-Only major change is that `TimeRange.contains`'s `to` is now exclusive.
+TL;DR -> If you don't use TimeRange, no change is necessary
 
-Meaning,
+In version 5, all time ranges except `CustomTimeRange` and week time ranges'
+`to` has been changed to be inclusive. This means it behaves same as
+CustomTimeRange.
+
+### To property example
+
+```dart
+// In 4.x.x
+assert(YearTimeRange(2020).to == DateTime(2021), true)
+
+// In 5.x.x
+assert(YearTimeRange(2020).to == DateTime(2021), false)
+assert(YearTimeRange(2020).to == DateTime(2020,12,31,23,59,59,999,999), true)
+```
+
+### Contains function example
 
 ```dart
 // In 4.x.x
@@ -20,12 +35,7 @@ assert(YearTimeRange(2025).contains(DateTime(2026,1,1)) => false)
 assert(YearTimeRange(2025).contains(DateTime(2026,1,1) - Duration(microsecond: 1)) => true)
 ```
 
-Everything else is same as 4.1.0
-
 ## From 3.0.0 -> 4.0.0
-
-There's no major change in version 4.0.0, but it has an user-facing breaking
-change.
 
 If you use `MonthTimeRange`, the format of the output range has been changed.
 
