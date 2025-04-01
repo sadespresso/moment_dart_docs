@@ -1,0 +1,8 @@
+{
+  "label": "Duration",
+  "position": 3,
+  "link": {
+    "type": "doc",
+    "id": "duration/relative"
+  }
+}

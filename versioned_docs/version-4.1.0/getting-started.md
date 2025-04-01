@@ -38,7 +38,7 @@ or, manually add in `pubspec.yaml`
 ```yaml title="pubspec.yaml"
 ...
 dependencies:
-    moment_dart: ^5.0.0
+    moment_dart: ^4.1.0
 ...
 ```
 
@@ -53,7 +53,7 @@ dependencies:
     You may want to set [**global localization**](global-localization.md) at
     the initialization of your application.
 
-2. Create a moment instance. See [list of constructors](https://pub.dev/documentation/moment_dart/latest/moment_dart/Moment-class.html#constructors)
+2. Create a moment instance. See [list of constructors](https://pub.dev/documentation/moment_dart/4.1.0/moment_dart/Moment-class.html#constructors)
 
     ```dart
     Moment moment = DateTime.now().toMoment();
@@ -64,7 +64,7 @@ dependencies:
     * `Moment.startOfToday()`
     * `Moment.endOfNextIsoWeek()`
 
-    See [list of static methods](https://pub.dev/documentation/moment_dart/latest/moment_dart/Moment-class.html#static-methods)
+    See [list of static methods](https://pub.dev/documentation/moment_dart/4.1.0/moment_dart/Moment-class.html#static-methods)
 
 ## Common problems you might face
 
