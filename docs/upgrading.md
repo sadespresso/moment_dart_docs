@@ -5,7 +5,7 @@ id: upgrading
 
 # Upgrading
 
-## From 4.0.0 -> 5.0.1
+## From 4.0.0 -> 5.x.x
 
 TL;DR -> If you don't use TimeRange, no change is necessary
 

@@ -51,6 +51,7 @@ above.
 
 | Code       | Language                                       | Country             | Class name                                                                                                           |
 | ---------- | ---------------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| ar_PS      | Arabic                                         | Palestine           | [LocalizationArPs](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationArPs-class.html)         |
 | de_DE      | German                                         | Germany             | [LocalizationDeDe](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationDeDe-class.html)         |
 | en_US      | English                                        | United States       | [LocalizationEnUs](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationEnUs-class.html)         |
 | es_ES      | Spanish                                        | Spain               | [LocalizationEsEs](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationEsEs-class.html)         |
