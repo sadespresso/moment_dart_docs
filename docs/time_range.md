@@ -71,7 +71,6 @@ final fromEncoded = TimeRange.parse("YearTimeRange@2024-01-01T00:00:00.000"); //
   Returns new instance in UTC timezone, or `this` if `this.isUtc == true`.
 
   :::warning
-
   All `TimeRange`s store the relevant info (e.g., `year`) and construct
   `DateTime` based on that information. This means `.toUtc()` will behave
   differently than you might expect.
@@ -83,7 +82,6 @@ final fromEncoded = TimeRange.parse("YearTimeRange@2024-01-01T00:00:00.000"); //
 
   However, the above isn't true for `CustomTimeRange`, which stores actual
   `DateTime` object, and transforms it.
-
   :::
 
 * `contains(DateTime point)`
@@ -93,6 +91,33 @@ final fromEncoded = TimeRange.parse("YearTimeRange@2024-01-01T00:00:00.000"); //
 * `containsRange(TimeRange other)`
 
   Returns whether this range contains the other range (inclusive)
+
+* `intersect(TimeRange other)`
+
+  Returns the intersection of two ranges, or null if they do not overlap.
+
+  ```dart
+  final TimeRange a = DateTime(1970).rangeTo(DateTime(2000).endOfYear());
+  final TimeRange b = DateTime(1975).rangeTo(DateTime(3000));
+
+  final TimeRange? intersection = a.intersect(b); // CustomTimeRange(DateTime(1975), DateTime(2000, 12, 31, 23, 59, 59, 999, 999))
+
+  final TimeRange century20 = DateTime(1900).rangeTo(DateTime(1999).endOfYear());
+  final TimeRange century21 = DateTime(2000).rangeTo(DateTime(2999).endOfYear());
+
+  final TimeRange? centuriesIntersection = century20 & century21; // null
+  ```
+
+* `toCustom()`
+
+  Returns this as a custom time range. You can also use the `.asCustom` getter.
+  If it's already a [`CustomTimeRange`](https://pub.dev/documentation/moment_dart/latest/moment_dart/CustomTimeRange-class.html),
+  it returns itself.
+
+  ```dart
+  final todayRange = TimeRange.today(); // DayTimeRange(2025, 4, 20)
+  todayRange.toCustom(); // CustomTimeRange(DateTime(2025, 4, 20), DateTime(2025, 4, 20, 23, 59, 999, 999))
+  ```
 
 [See full API reference](https://pub.dev/documentation/moment_dart/latest/moment_dart/TimeRange-class.html)
 
