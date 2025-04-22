@@ -5,16 +5,16 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "prebuild": "cd demo && flutter build web --base-href /moment_dart_docs/demo/ -o ../static/demo && rm ../static/demo/index.html",
+    "prebuild": "cd demo && flutter build web --base-href /demo/ -o ../static/demo && rm ../static/demo/index.html",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "predeploy": "cd demo && flutter build web --base-href /moment_dart_docs/demo/ -o ../static/demo && rm ../static/demo/index.html",
+    "predeploy": "cd demo && flutter build web --base-href /demo/ -o ../static/demo && rm ../static/demo/index.html",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "build:demo": "cd demo && flutter build web --base-href /moment_dart_docs/demo/ -o ../static/demo --source-maps && rm ../static/demo/index.html"
+    "build:demo": "cd demo && flutter build web --base-href /demo/ -o ../static/demo --source-maps && rm ../static/demo/index.html"
   },
   "dependencies": {
     "@docusaurus/core": "^3.7.0",

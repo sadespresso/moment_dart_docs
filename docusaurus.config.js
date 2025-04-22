@@ -3,7 +3,7 @@
 
 import { themes as prismThemes } from "prism-react-renderer";
 
-const baseUrl = "/moment_dart_docs/";
+const baseUrl = "/";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {

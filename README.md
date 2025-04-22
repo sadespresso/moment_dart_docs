@@ -1,6 +1,6 @@
 # Official documentation for moment_dart
 
-## [📖 Read the docs](https://dev.gege.mn/moment_dart_docs)
+## [📖 Read the docs](https://moment-dart.dev.gege.mn)
 
 ## Related to moment_dart
 
