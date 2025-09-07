@@ -3,7 +3,7 @@ description: A demo project for moment_dart
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
-version: 5.2.3
+version: 5.2.4
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
@@ -18,7 +18,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  moment_dart: 5.2.3
+  moment_dart: 5.2.4
   syntax_highlight: ^0.4.0
 
 dev_dependencies:
