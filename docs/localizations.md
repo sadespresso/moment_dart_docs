@@ -63,5 +63,6 @@ above.
 | mn_Mong_MN | Traditional Mongolian with Arabic numbers      | Mongolia            | [LocalizationMnMongMn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationMnMongMn-class.html) |
 | mn_Qaaq_MN | Traditional Mongolian with Traditional Numbers | Mongolia            | [LocalizationMnQaaqMn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationMnQaaqMn-class.html) |
 | pt_PT      | Portuguese                                     | Portuguese Republic | [LocalizationPtPT](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationPtPt-class.html)         |
-| tr_TR      | Turkish                                        | Turkeey             | [LocalizationTrTr](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationTrTr-class.html)         |
+| ru_RU      | Russian                                        | Russia              | [LocalizationTrTr](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationRuRu-class.html)         |
+| tr_TR      | Turkish                                        | Türkiye             | [LocalizationTrTr](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationTrTr-class.html)         |
 | zh_CN      | Simplified Chinese                             | China               | [LocalizationZhCn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationZhCn-class.html)         |
