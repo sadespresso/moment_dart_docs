@@ -23,8 +23,8 @@ import 'package:moment_dart/src/localizations.dart';
 
 class LocalizationEnMeowKC extends MomentLocalization {
   @override
-  CalenderLocalizationData get calendarData => CalenderLocalizationData(
-        keywords: CalenderLocalizationKeywords(
+  CalendarLocalizationData get calendarData => CalendarLocalizationData(
+        keywords: CalendarLocalizationKeywords(
           at: (date, time) => "meow $time",
           lastWeekday: (weekday) => "Last meow $weekday",
           nextWeekday: (weekday) => weekday,

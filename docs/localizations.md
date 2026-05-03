@@ -39,7 +39,7 @@ MomentLocalizations.byLanguage("01"); // Returns null
 
 ```dart
 MomentLocalizations.byLocale("en"); // Returns null
-MomentLocalizations.byLanguage("es"); // Returns the instance of LocalizationEsEs
+MomentLocalizations.byLocale("es"); // Returns the instance of LocalizationEsEs
 ```
 
 When given language-only locale, and fails, `.byLocale` tries locales with same
@@ -62,7 +62,8 @@ above.
 | mn_MN      | Mongolian                                      | Mongolia            | [LocalizationMnMn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationMnMn-class.html)         |
 | mn_Mong_MN | Traditional Mongolian with Arabic numbers      | Mongolia            | [LocalizationMnMongMn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationMnMongMn-class.html) |
 | mn_Qaaq_MN | Traditional Mongolian with Traditional Numbers | Mongolia            | [LocalizationMnQaaqMn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationMnQaaqMn-class.html) |
-| pt_PT      | Portuguese                                     | Portuguese Republic | [LocalizationPtPT](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationPtPt-class.html)         |
-| ru_RU      | Russian                                        | Russia              | [LocalizationTrTr](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationRuRu-class.html)         |
+| pl_PL      | Polish                                         | Poland              | [LocalizationPlPl](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationPlPl-class.html)         |
+| pt_PT      | Portuguese                                     | Portuguese Republic | [LocalizationPtPt](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationPtPt-class.html)         |
+| ru_RU      | Russian                                        | Russia              | [LocalizationRuRu](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationRuRu-class.html)         |
 | tr_TR      | Turkish                                        | Türkiye             | [LocalizationTrTr](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationTrTr-class.html)         |
 | zh_CN      | Simplified Chinese                             | China               | [LocalizationZhCn](https://pub.dev/documentation/moment_dart/latest/moment_dart/LocalizationZhCn-class.html)         |

@@ -55,7 +55,7 @@ Settings `forceLocal: true` converts DateTime to local one before formatting. Us
 for parsed `DateTime`s and ones came from API.
 
 ```dart
-now.formatTime(forceLocal: true);
+now.formatTime(true);
 now.toLocal().LTS;
 ```
 
