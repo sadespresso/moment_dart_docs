@@ -11,13 +11,15 @@ import 'widgets/not_found.dart';
 import 'widgets/shell.dart';
 
 void main() {
+  final String fragment = Uri.base.fragment;
+  _initialFragment = fragment.isEmpty ? null : fragment;
   usePathUrlStrategy();
   runApp(const DocsApp());
 }
 
 // The path URL strategy drops the #fragment of the URL the site was opened
 // with, so it's read once here and handed to the first page.
-String? _initialFragment = Uri.base.fragment.isEmpty ? null : Uri.base.fragment;
+String? _initialFragment;
 
 String? _takeFragment(GoRouterState state) {
   if (state.uri.fragment.isNotEmpty) return state.uri.fragment;
