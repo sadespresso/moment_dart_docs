@@ -1,2 +1,10 @@
 /*
+  X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/assets/*
+  Cache-Control: public, max-age=86400
+
+/canvaskit/*
+  Cache-Control: public, max-age=86400
