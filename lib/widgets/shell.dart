@@ -11,7 +11,7 @@ import 'search.dart';
 const String packageVersion = "6.0.0";
 const String githubUrl = "https://github.com/sadespresso/moment_dart";
 const String pubUrl = "https://pub.dev/packages/moment_dart";
-const String previousDocsUrl = "https://v5.moment-dart.dev.gege.mn";
+const String previousDocsUrl = "https://moment-dart-docs-v5.pages.dev";
 const String apiUrl =
     "https://pub.dev/documentation/moment_dart/latest/moment_dart/";
 

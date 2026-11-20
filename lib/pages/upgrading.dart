@@ -20,7 +20,7 @@ final DocPage upgradingPage = DocPage(
       "now behave differently at runtime.",
     ),
     const P(
-      "The [5.x docs](https://v5.moment-dart.dev.gege.mn) stay online while "
+      "The [5.x docs](https://moment-dart-docs-v5.pages.dev) stay online while "
       "you upgrade.",
     ),
     const H3("Migration checklist"),

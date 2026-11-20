@@ -10,15 +10,15 @@ shown are always the library's actual behavior.
 The site keeps two major versions: the current one, here on `main`, and the
 one before it. The 5.x docs (the old Docusaurus site, frozen) are on the
 [`v5`](https://github.com/sadespresso/moment_dart_docs/tree/v5) branch and at
-<https://v5.moment-dart.dev.gege.mn>, deployed by hand to their own Cloudflare
+<https://moment-dart-docs-v5.pages.dev>, deployed by hand to their own Cloudflare
 Pages project; that branch's README says how. Older docs aren't served; their
 source is on
 [`archive-pre-v6`](https://github.com/sadespresso/moment_dart_docs/tree/archive-pre-v6).
 
 When 7.0 ships: copy this site to a `v6` branch, deploy it to a
-`moment-dart-docs-v6` project at `v6.moment-dart.dev.gege.mn`, point
+`moment-dart-docs-v6` project (served at `moment-dart-docs-v6.pages.dev`), point
 `previousDocsUrl` in `lib/widgets/shell.dart` at it, and delete the v5
-project and its DNS record.
+project.
 
 ## Run it
 
