@@ -1,7 +1,7 @@
 # moment_dart 5.x documentation
 
 The docs for moment_dart 5.x, served at
-[v5.moment-dart.dev.gege.mn](https://v5.moment-dart.dev.gege.mn). The current
+<https://moment-dart-docs-v5.pages.dev>. The current
 docs live on `main` and at [moment-dart.dev.gege.mn](https://moment-dart.dev.gege.mn).
 
 The site keeps the current major version and the one before it. This branch is
