@@ -12,7 +12,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://dev.gege.mn/",
+  url: "https://v5.moment-dart.dev.gege.mn/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: baseUrl,
@@ -51,7 +51,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/sadespresso/moment_dart_docs/tree/main/",
+          editUrl: "https://github.com/sadespresso/moment_dart_docs/tree/v5/",
           routeBasePath: "/",
           lastVersion: "current",
           versions: {
@@ -78,6 +78,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
+      announcementBar: {
+        id: "v5-archive",
+        content:
+          'These are the docs for moment_dart 5.x. For the latest version, see <a href="https://moment-dart.dev.gege.mn">moment-dart.dev.gege.mn</a> and <a href="https://moment-dart.dev.gege.mn/upgrading">upgrading to 6.0</a>.',
+        isCloseable: false,
+      },
       navbar: {
         title: "moment_dart",
         logo: {
@@ -98,8 +104,9 @@ const config = {
             "aria-label": "Flutter Web Demo",
           },
           {
-            type: "docsVersionDropdown",
+            href: "https://moment-dart.dev.gege.mn",
             position: "right",
+            label: "6.x docs",
           },
           {
             href: "https://pub.dev/packages/moment_dart",
