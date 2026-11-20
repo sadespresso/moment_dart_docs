@@ -31,9 +31,7 @@ class Footer extends StatelessWidget {
           ),
           Inline(
             "Examples on this site run in your browser, in ${localOffset()}. "
-            "Docs for 5.x and earlier are on the "
-            "[archive-pre-v6](https://github.com/sadespresso/moment_dart_docs/tree/archive-pre-v6) "
-            "branch.",
+            "Still on 5.x? Read the [5.x docs]($previousDocsUrl).",
             style: style,
           ),
         ],

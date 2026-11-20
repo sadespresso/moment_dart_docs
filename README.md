@@ -5,9 +5,20 @@ live at <https://moment-dart.dev.gege.mn>. It's a Flutter web app: every code
 example runs against the real package in the reader's browser, so the outputs
 shown are always the library's actual behavior.
 
-Docs for 5.x and earlier (the old Docusaurus site) are on the
-[`archive-pre-v6`](https://github.com/sadespresso/moment_dart_docs/tree/archive-pre-v6)
-branch.
+## Versions
+
+The site keeps two major versions: the current one, here on `main`, and the
+one before it. The 5.x docs (the old Docusaurus site, frozen) are on the
+[`v5`](https://github.com/sadespresso/moment_dart_docs/tree/v5) branch and at
+<https://v5.moment-dart.dev.gege.mn>, deployed by hand to their own Cloudflare
+Pages project; that branch's README says how. Older docs aren't served; their
+source is on
+[`archive-pre-v6`](https://github.com/sadespresso/moment_dart_docs/tree/archive-pre-v6).
+
+When 7.0 ships: copy this site to a `v6` branch, deploy it to a
+`moment-dart-docs-v6` project at `v6.moment-dart.dev.gege.mn`, point
+`previousDocsUrl` in `lib/widgets/shell.dart` at it, and delete the v5
+project and its DNS record.
 
 ## Run it
 

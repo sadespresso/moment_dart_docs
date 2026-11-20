@@ -11,6 +11,7 @@ import 'search.dart';
 const String packageVersion = "6.0.0";
 const String githubUrl = "https://github.com/sadespresso/moment_dart";
 const String pubUrl = "https://pub.dev/packages/moment_dart";
+const String previousDocsUrl = "https://v5.moment-dart.dev.gege.mn";
 const String apiUrl =
     "https://pub.dev/documentation/moment_dart/latest/moment_dart/";
 
@@ -146,41 +147,97 @@ class Brand extends StatelessWidget {
   Widget build(BuildContext context) {
     final Palette p = context.palette;
     final bool compact = MediaQuery.sizeOf(context).width < 520;
-    return MouseRegion(
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        onTap: () => context.go("/"),
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        MouseRegion(
+          cursor: SystemMouseCursors.click,
+          child: GestureDetector(
+            onTap: () => context.go("/"),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                CustomPaint(size: const Size(26, 26), painter: DialMark(p)),
+                const SizedBox(width: 10),
+                Text(
+                  "moment_dart",
+                  style: TextStyle(
+                    fontFamily: displayFont,
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20,
+                    letterSpacing: -0.3,
+                    color: p.ink,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        if (!compact) const SizedBox(width: 8),
+        if (!compact) const VersionMenu(),
+      ],
+    );
+  }
+}
+
+class VersionMenu extends StatelessWidget {
+  const VersionMenu({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final Palette p = context.palette;
+    final TextStyle item = Txt.small(p).copyWith(color: p.ink, fontSize: 14);
+    return PopupMenuButton<String>(
+      tooltip: "Docs versions",
+      offset: const Offset(0, 30),
+      color: p.surface,
+      surfaceTintColor: Colors.transparent,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+        side: BorderSide(color: p.line),
+      ),
+      onSelected: (url) =>
+          launchUrl(Uri.parse(url), webOnlyWindowName: "_self"),
+      itemBuilder: (context) => [
+        PopupMenuItem<String>(
+          enabled: false,
+          height: 36,
+          child: Row(
+            children: [
+              Icon(Icons.check_rounded, size: 16, color: p.hand),
+              const SizedBox(width: 8),
+              Text("6.x, this site", style: item),
+            ],
+          ),
+        ),
+        PopupMenuItem<String>(
+          value: previousDocsUrl,
+          height: 36,
+          child: Row(
+            children: [
+              const SizedBox(width: 24),
+              Text("5.x docs", style: item),
+            ],
+          ),
+        ),
+      ],
+      child: Container(
+        padding: const EdgeInsets.fromLTRB(7, 2, 3, 2),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(6),
+          border: Border.all(color: p.line),
+        ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            CustomPaint(size: const Size(26, 26), painter: DialMark(p)),
-            const SizedBox(width: 10),
             Text(
-              "moment_dart",
-              style: TextStyle(
-                fontFamily: displayFont,
-                fontWeight: FontWeight.w700,
-                fontSize: 20,
-                letterSpacing: -0.3,
-                color: p.ink,
-              ),
+              packageVersion,
+              style: Txt.mono(
+                p,
+                size: 12,
+              ).copyWith(color: p.muted, height: 1.3),
             ),
-            if (!compact) const SizedBox(width: 8),
-            if (!compact)
-              Container(
-                padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(6),
-                  border: Border.all(color: p.line),
-                ),
-                child: Text(
-                  packageVersion,
-                  style: Txt.mono(
-                    p,
-                    size: 12,
-                  ).copyWith(color: p.muted, height: 1.3),
-                ),
-              ),
+            Icon(Icons.expand_more_rounded, size: 14, color: p.faint),
           ],
         ),
       ),

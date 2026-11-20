@@ -19,6 +19,10 @@ final DocPage upgradingPage = DocPage(
       "timezones, `byLocale`, `CustomTimeRange` and many localized strings "
       "now behave differently at runtime.",
     ),
+    const P(
+      "The [5.x docs](https://v5.moment-dart.dev.gege.mn) stay online while "
+      "you upgrade.",
+    ),
     const H3("Migration checklist"),
     const Bullets(ordered: true, [
       "Replace assignments to `Moment.epoch`, `maxValue`, `minValue` and "
