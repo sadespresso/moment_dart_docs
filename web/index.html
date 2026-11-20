@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>moment_dart: dates people can read</title>
+  <meta name="description" content="Documentation for moment_dart, a moment.js-inspired Dart library that formats, compares and describes DateTime in 16 languages. Every example runs live in your browser.">
+  <meta name="theme-color" content="#F4F5F9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1124" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://moment-dart.dev.gege.mn/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="moment_dart">
+  <meta property="og:title" content="moment_dart: dates people can read">
+  <meta property="og:description" content="A moment.js-inspired Dart library that formats, compares and describes DateTime in 16 languages.">
+  <meta property="og:url" content="https://moment-dart.dev.gege.mn/">
+  <meta property="og:image" content="https://moment-dart.dev.gege.mn/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="assets/assets/fonts/BricolageText-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/assets/fonts/BricolageDisplay-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+  <style>
+    :root { --bg: #F4F5F9; --ink: #161A33; --muted: #555B7D; --hand: #E29A12; --line: #DDE0EB; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0E1124; --ink: #E8EAF6; --muted: #A2A8CB; --hand: #F2B33D; --line: #272C50; }
+    }
+    html, body { margin: 0; height: 100%; background: var(--bg); }
+    #splash {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 18px;
+      font: 500 15px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--muted);
+    }
+    #splash svg { width: 56px; height: 56px; }
+    #splash .minute { transform-origin: 28px 28px; animation: sweep 1.6s linear infinite; }
+    @keyframes sweep { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { #splash .minute { animation: none; } }
+    #splash nav { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  </style>
+</head>
+<body>
+  <div id="splash" aria-busy="true">
+    <svg viewBox="0 0 56 56" aria-hidden="true">
+      <circle cx="28" cy="28" r="28" fill="var(--ink)"/>
+      <line x1="28" y1="28" x2="17.6" y2="20.5" stroke="var(--hand)" stroke-width="5.6" stroke-linecap="round"/>
+      <line class="minute" x1="28" y1="28" x2="28" y2="8" stroke="var(--bg)" stroke-width="3.6" stroke-linecap="round"/>
+    </svg>
+    <span>Loading moment_dart docs</span>
+    <nav aria-label="Documentation">
+      <h1>moment_dart documentation</h1>
+      <p>moment_dart is a moment.js-inspired Dart library that formats, compares and describes DateTime in 16 languages.</p>
+      <a href="/getting-started">Getting started</a>
+      <a href="/upgrading">Upgrading to 6.0</a>
+      <a href="/moment">Creating moments</a>
+      <a href="/formatting">Formatting</a>
+      <a href="/calendar">Calendar</a>
+      <a href="/duration">Relative durations</a>
+      <a href="/duration/precise">Precise durations</a>
+      <a href="/time-range">Time ranges</a>
+      <a href="/extension">DateTime extensions</a>
+      <a href="/localizations">Localizations</a>
+      <a href="/playground">Playground</a>
+      <a href="https://pub.dev/packages/moment_dart">moment_dart on pub.dev</a>
+    </nav>
+    <noscript>These docs are a Flutter web app and need JavaScript. The package is at https://pub.dev/packages/moment_dart</noscript>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
